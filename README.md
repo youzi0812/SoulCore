@@ -1,58 +1,40 @@
-# SoulCore 魂核 · 免费体验版
+# SoulCore 魂核 — 团结引擎 AI-NPC 灵魂插件
 
-Unity / 团结引擎 **意识流 NPC** 插件。
+魂核让 NPC 拥有「灵魂」：人格、情绪、记忆、关系、决策、行为树，甚至人格涌现（经历塑造人格）。
+它不替代行为树，而是行为树之上的灵魂层——决定 NPC「是谁」和「想做什么」。
 
-| 版本 | 位置 | 说明 |
-|------|------|------|
-| **1.4.0 免费版** | [`1.4.0/`](./1.4.0/) | Cube 村 Demo · Import 即 Play |
-| **1.6.0 完整版** | 团结资源商店（即将上架） | 归田镇 · 世界事件 · 传闻 · 存档 |
+## ✨ 特性（1.7.0）
 
----
+- **21 维人格特质**：一句话 / 预设 / 滑条三种配置方式，可一键用 LLM 解析人格
+- **情绪引擎**：15 种情绪 VAD 建模，每日自然衰减
+- **三层记忆**：短 / 长 / 永久，遗忘曲线 + 回忆强化
+- **四维加权决策**：人格 / 情绪 / 记忆 / 资源
+- **关系引擎**：亲密度 / 信任 / 敬畏三轴，每日结算
+- **5 大子系统**：兴趣 / 好奇 / 情绪感染 / 表达风味 / 梦境
+- **世界节点**：事件传播 / 谣言扩散 / 世界存档 / 每日循环
+- **全中文面板**：配置资产 / NPC / 世界节点全部中文化
+- **开放性 LLM 入口**：一句话生成人格、NPC 真实对话（DeepSeek / Kimi / MiniMax 等任意 OpenAI 兼容接口）
 
-## 下载 1.4.0
+## 📦 安装
 
-直接下载：
+1. 下载 `1.7.0/SoulCore_1.7.0.unitypackage`
+2. 团结引擎菜单：**资源 → 导入包 → 自定义包** → 选择文件
+3. 右键 → **创建 → 魂核 → NPC 配置**（可选的配置资产）
 
-**[`1.4.0/SoulCore_1.4.0_Import.unitypackage`](./1.4.0/SoulCore_1.4.0_Import.unitypackage)**
+## 🚀 快速开始
 
-或在 [Releases](https://github.com/youzi0812/SoulCore/releases) 查看（若有 Release 附件）。
+1. 场景创建空物体 → **添加组件 → 魂核 → World（世界节点）**
+2. 创建 NPC（球体 + 碰撞体）→ **添加组件 → 魂核 → NPC（单个角色）**
+3. 配置 NPC：魂核 ID / 显示名 / 配置资产
+4. **Play** → 点击 NPC 即可对话（配置资产里开启 LLM 并填接口）
 
----
+## 📌 版本地图
 
-## 30 秒体验
+| 版本 | 内容 | 渠道 |
+|---|---|---|
+| 1.7.0 | 基础版（人格/情绪/记忆/决策/关系/存档/LLM 对话） | 本仓库免费 |
+| 1.8.0 | 终极版（+ 专属行为树 + 人格涌现增强 + 对话 UI） | 团结商店 |
 
-1. Unity / 团结 **2022.3+** 或 **团结 1.8.x**（内置渲染管线）
-2. **Assets → Import Package → Custom Package…**
-3. 选择 `SoulCore_1.4.0_Import.unitypackage` → 全选 Import
-4. 打开场景：
+## 📄 许可证
 
-   `Assets/SoulCore/Demos/StoreDemo/Scenes/SoulCore_VillageDemo_Cube.unity`
-
-5. **Play** — 10 人走动、名牌、气泡、Dashboard（F1）
-
----
-
-## 免费版 vs 完整版 1.6.0
-
-| 功能 | 1.4.0 免费 | 1.6.0 商店 |
-|------|:----------:|:----------:|
-| 意识流编排 · 关系 · OpenBehavior · 记忆 | ✅ | ✅ |
-| Cube 村 Demo | ✅ | ✅ |
-| 世界事件 · 传闻传播 | ❌ | ✅ |
-| JSON 存档 F5/F6 | ❌ | ✅ |
-| 《归田镇》Demo | ❌ | ✅ |
-
----
-
-## 许可
-
-MIT License — 见 [LICENSE](./LICENSE)
-
-完整版商店包适用 Asset Store EULA。
-
----
-
-## 链接
-
-- 仓库：[github.com/youzi0812/SoulCore](https://github.com/youzi0812/SoulCore)
-- 问题反馈：[Issues](https://github.com/youzi0812/SoulCore/issues)
+MIT（见 LICENSE）
